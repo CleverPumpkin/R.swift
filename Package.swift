@@ -12,6 +12,7 @@ let package = Package(
     products: [
         .executable(name: "rswift", targets: ["rswift"]),
         .library(name: "RswiftLibrary", targets: ["RswiftResources"]),
+        .library(name: "RswiftGeneratorLib", targets: ["RswiftResources","RswiftParsers", "RswiftGenerators"]),
         .plugin(name: "RswiftGenerateInternalResources", targets: ["RswiftGenerateInternalResources"]),
         .plugin(name: "RswiftGeneratePublicResources", targets: ["RswiftGeneratePublicResources"]),
         .plugin(name: "RswiftGenerateResourcesCommand", targets: ["RswiftGenerateResourcesCommand"]),
